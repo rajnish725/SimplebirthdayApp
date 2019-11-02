@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_background"
+    android:focusableInTouchMode="true"
+    tools:context=".BirthdayActivity">
+
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="3dp"
+        android:text="stop"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_birth"
+        android:tint="@color/red_lucent_clr" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/font_roboto_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:text="wish you very "
+
+            android:textAlignment="center"
+            android:textColor="#d98ba1"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_birthday"
+            style="@style/font_roboto_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:text="Happy birthday"
+            android:textAlignment="viewStart"
+            android:textColor="#d98ba1"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_birthday_name"
+            style="@style/font_roboto_bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Happy birthday"
+            android:textAlignment="center"
+            android:textColor="#f7f7f7"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold|italic"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="happy_birthday.json"
+        app:lottie_loop="true" />
+
+    <!--<com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="b_birthday.json"
+        app:lottie_loop="true" />-->
+
+
+    <com.google.android.gms.ads.doubleclick.PublisherAdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="/6499/example/banner"/>
+
+
+</RelativeLayout>

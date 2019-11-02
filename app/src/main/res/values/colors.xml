@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="offer_unavailable_clr">#19000000</color>
+
+    <color name="semi_transparent_black">#4b000000</color>
+
+    <color name="grey">#969696</color>
+    <color name="grey2">#a8a8a8</color>
+    <color name="greyMedium1">#d8d8d8</color>
+    <color name="greyMedium2">#a0a0a0</color>
+    <color name="greyMedium3">#858585</color>
+    <color name="greyDark">#969696</color>
+    <color name="greyLight">#19999999</color>
+    <color name="greyLight1">#40555555</color>
+    <color name="greyLight2">#C8C8C8</color>
+    <color name="greyLight3">#80000000</color>
+    <color name="greyLight4">#e6e6e6</color>
+    <color name="greyLight5">#b0b0b0</color>
+    <color name="greyLight6">#e0e0e0</color>
+    <color name="grey_lighter">#e9e5e5</color>
+    <color name="grey_lighter2">#f6f6f6</color>
+    <color name="grey_lighter3">#f0f0f0</color>
+    <color name="grey_disable">#33565656</color>
+    <color name="grey_background">#f4f4f4</color>
+    <color name="warm_grey_11">#20c4c0c0</color>
+    <color name="grey_hint_clr">@color/greyLight2</color>
+    <color name="grey_bottomColor">#767676</color>
+    <color name="grey_ripple_clr">#878080</color>
+    <color name="grey_gdnt_bottom">#777777</color>
+
+    <color name="grey_clr">#404040</color>
+    <color name="white2">#40ffffff</color>
+
+    <color name="slider_bg_color">#818181</color>
+    <color name="slider_thumb_color">#9b9b9b</color>
+
+    <color name="black_85">#202020</color>
+    <color name="black_75">#c0000000</color>
+
+    <color name="orange">#fcaa23</color>
+    <color name="l_green">#7ed321</color>
+
+    <color name="carryBag_selected_clr">#10b4ea</color>
+    <color name="carryBag_unselected_clr">#c7c7c7</color>
+
+    <color name="tab_selected_clr">#3C96E6</color>
+    <color name="tab_unselected_clr">@color/greyDark</color>
+
+    <color name="red_gdt_top_clr">#cc4242</color>
+    <color name="red_lucent_clr">#723333</color>
+
+    <color name="red_clr">#fa5a5a</color>
+    <color name="red_newClr">#FFDA4343</color>
+    <color name="red_newClr2">#df5b5b</color>
+    <color name="red_ripple">#ffb7b7</color>
+    <color name="red_top_clr">#f43746</color>
+    <color name="red_bottom_clr">#b2212d</color>
+
+    <color name="blue_clr">#5b69c1</color>
+    <color name="offBlue">#bfe4e1</color>
+    <color name="offBlue2">#a1d8d3</color>
+    <color name="blue_light">#7d9de5</color>
+    <color name="golden_clr">#ffda44</color>
+
+    <color name="green_top_clr">#41cf5c</color>
+    <color name="green_bottom_clr">#24a73d</color>
+
+    <color name="blue_top_clr">#065085</color>
+    <color name="blue_bottom_clr">#1c74b4</color>
+
+    <color name="grey_top_clr">#2a2a2a</color>
+    <color name="grey_bottom_clr">#666666</color>
+
+    <color name="black2">#303030</color>
+
+    <color name="zwing_top_clr">#242424</color>
+    <color name="zwing_bottom_clr">@color/greyDark</color>
+
+    <color name="screen_background">#2f2f2f</color>
+    <color name="divider_clr">@color/screen_background</color>
+    <color name="divider_clr2">#40000000</color>
+
+    <color name="white_two">#d5d5d5</color>
+    <color name="white_three">#33ffffff</color>
+
+    <color name="green_clr">#33CF6C</color>
+    <color name="green_clr2">#3cba54</color>
+    <color name="green_light">#6ff17b</color>
+    <color name="green_dark">#26a554</color>
+
+    <color name="white_two_ripple">#44d5d5d5</color>
+
+    <color name="login_hint_clr">#19ffffff</color>
+
+    <color name="sky_blue">#08ade3</color>
+    <color name="sky_blue_clr">#77badf</color>
+    <color name="sky_blue_dark">#2e8fc7</color>
+    <color name="sky_blue_light">#94e5ff</color>
+
+    <color name="ripple_green_light_clr">#c7facc</color>
+
+    <color name="incorrect_price_header_red">@color/red_clr</color>
+    <color name="incorrect_price_header_green">@color/green_clr2</color>
+    <color name="green_gdt_bottom_clr">#28983e</color>
+    <color name="correct_price_msg_txtClr">#4bcf5d</color>
+    <color name="newGreen">#FF2E9F44</color>
+    <color name="incorrect_price_msg_txtClr">@color/red_clr</color>
+
+    <!--Tablayout colors-->
+    <color name="tab_background_clr">#2a597f</color>
+    <color name="tab_active_text_clr">#fff</color>
+    <color name="tab_deactive_text_clr">#80ffffff</color>
+    <color name="tab_selector_clr">#6ff17b</color>
+
+    <color name="profile_top_clr">#0987ad</color>
+    <color name="profile_bottom_clr">#2a5a7f</color>
+
+    <color name="color_green">#14808d</color>
+    <color name="color_brown">#343838</color>
+    <color name="color_orange">#f38a32</color>
+    <color name="color_blue">#1479b7</color>
+    <color name="divider_grey">#e4e4e5</color>
+
+
+</resources>
