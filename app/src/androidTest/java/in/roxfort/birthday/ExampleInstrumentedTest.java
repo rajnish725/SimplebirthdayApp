@@ -1,4 +1,4 @@
-package in.roxfort.gpstestnew;
+package in.roxfort.birthday;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

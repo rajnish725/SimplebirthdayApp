@@ -1,4 +1,4 @@
-package in.roxfort.gpstestnew;
+package in.roxfort.birthday;
 
 import org.junit.Test;
 

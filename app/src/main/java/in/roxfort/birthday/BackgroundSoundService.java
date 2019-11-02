@@ -1,11 +1,9 @@
-package in.roxfort.gpstestnew;
+package in.roxfort.birthday;
 
 import android.app.Service;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
-import android.content.res.AssetManager;
 import android.media.MediaPlayer;
-import android.os.Environment;
 import android.os.IBinder;
 
 import java.io.IOException;

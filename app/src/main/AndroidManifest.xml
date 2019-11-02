@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="in.roxfort.gpstestnew">
+    package="in.roxfort.birthday">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
 
-            android:name=".BirthdayActivity"
+            android:name="in.roxfort.birthday.BirthdayActivity"
             android:windowSoftInputMode="adjustPan">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@
             android:value="true" />
 
         <service
-            android:name=".BackgroundSoundService"
+            android:name="in.roxfort.birthday.BackgroundSoundService"
             android:enabled="true" />
     </application>
 
