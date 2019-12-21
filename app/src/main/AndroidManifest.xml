@@ -20,6 +20,9 @@
             </intent-filter>
         </activity>
 
+        <!--  <meta-data
+              android:name="com.google.android.gms.ads.APPLICATION_ID"
+              android:value="ca-app-pub-6805683297486423/9269462115" />-->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-6805683297486423~5562490707" />
@@ -27,6 +30,10 @@
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
             android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
 
         <service
             android:name="in.roxfort.birthday.BackgroundSoundService"
