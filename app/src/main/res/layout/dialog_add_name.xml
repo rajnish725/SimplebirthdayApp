@@ -19,24 +19,24 @@
 
             <ImageView
                 android:id="@+id/img_back"
-                android:layout_width="@dimen/_13sdp"
-                android:layout_height="@dimen/_14sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
                 android:scaleType="fitXY"
                 android:src="@drawable/icon_back_arrow_vector"
                 android:tint="#fff" />
 
             <TextView
-                android:textStyle="bold"
                 android:id="@+id/txt_name"
-                style="@style/font_roboto_bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_6sdp"
                 android:layout_marginTop="@dimen/_1sdp"
                 android:layout_toEndOf="@+id/img_back"
+                android:fontFamily="@font/berkshire_swash"
                 android:text="Enter your name"
                 android:textColor="#fff"
-                android:textSize="@dimen/_10sdp" />
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
 
 
             <LinearLayout
@@ -52,29 +52,33 @@
                     android:id="@+id/edt_name"
                     style="@style/font_roboto_medium"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_30sdp"
+                    android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="2dp"
                     android:background="@drawable/bg_grey_lighter_sld_rounded"
+                    android:fontFamily="@font/berkshire_swash"
                     android:hint="Name..."
+                    android:lineSpacingExtra="@dimen/_1sdp"
+                    android:lineSpacingMultiplier="2"
                     android:lines="1"
-                    android:textStyle="bold"
-                    android:textColorHint="@color/black2"
+
                     android:maxLines="1"
                     android:paddingStart="@dimen/_3sdp"
                     android:textColor="@color/black2"
+                    android:textColorHint="@color/black2"
                     android:textDirection="@null"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:textStyle="bold"
                     android:id="@+id/txt_error"
                     style="@style/font_roboto_bold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
                     android:text="plz enter name first !!!..."
                     android:textColor="#b81c1c"
-                    android:layout_marginStart="@dimen/_7sdp"
                     android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
                     android:visibility="gone" />
             </LinearLayout>
 
@@ -83,17 +87,17 @@
 
         <Button
             android:id="@+id/btn_continue"
-            style="@style/font_roboto_bold"
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_20sdp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="@dimen/_5sdp"
             android:background="@drawable/ripple_green_btn_ronded"
+            android:fontFamily="@font/berkshire_swash"
             android:text="Continue"
             android:textAllCaps="false"
             android:textColor="@color/white_two"
-            android:textSize="@dimen/_5sdp" />
+            android:textSize="@dimen/_10sdp" />
 
     </RelativeLayout>
 

@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Handler;
+import android.os.Message;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
@@ -33,9 +35,6 @@ import com.google.android.gms.ads.doubleclick.PublisherAdRequest;
 import com.google.android.gms.ads.doubleclick.PublisherAdView;
 import com.google.android.gms.ads.initialization.InitializationStatus;
 import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
-import com.google.android.gms.ads.reward.RewardItem;
-import com.google.android.gms.ads.reward.RewardedVideoAd;
-import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 public class BirthdayActivity extends AppCompatActivity {
     private final String TAG = BirthdayActivity.class.getSimpleName();
@@ -44,9 +43,7 @@ public class BirthdayActivity extends AppCompatActivity {
     Context mContext = null;
     boolean isYes = true;
     Dialog dialog = null;
-    EditText edittext;
     private String name;
-    Button btn_stop;
 
 
     /*ads declaration*/
@@ -67,10 +64,19 @@ public class BirthdayActivity extends AppCompatActivity {
         hideSoftKeyboard(mContext);
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-        if (isYes) {
-            dialogName();
-            isYes = false;
-        }
+
+
+
+        new Handler().post(new Runnable() {
+            @Override
+            public void run() {
+                if (isYes) {
+                    dialogCustom();
+                    isYes = false;
+                }
+
+            }
+        });
 
         // TODO: 20/12/19
         //todo Initialize the Mobile Ads SDK.
@@ -86,12 +92,9 @@ public class BirthdayActivity extends AppCompatActivity {
         mPublisherAdView.loadAd(adRequest);
 //        loadRewardedVideoAd();
 
-        edittext = findViewById(R.id.edittext);
         txt_birthday = findViewById(R.id.txt_birthday);
         txt_birthday_name = findViewById(R.id.txt_birthday_name);
-        btn_stop = findViewById(R.id.btn_stop);
-
-        txt_birthday_name.setOnLongClickListener(new View.OnLongClickListener() {
+        txt_birthday.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), BackgroundSoundService.class);
@@ -153,7 +156,7 @@ public class BirthdayActivity extends AppCompatActivity {
     }
 
 
-    private void dialogName() {
+    private void dialogCustom() {
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         dialog = new Dialog(mContext);
