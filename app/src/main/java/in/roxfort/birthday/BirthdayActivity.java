@@ -51,10 +51,7 @@ public class BirthdayActivity extends AppCompatActivity {
     private static final String AD_UNIT_ID = "ca-app-pub-6805683297486423/3691042196";
 
     private InterstitialAd interstitialAd;
-    private CountDownTimer countDownTimer;
-    private boolean gameIsInProgress;
     AdRequest requestAd;
-    private long timerMilliseconds;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +61,6 @@ public class BirthdayActivity extends AppCompatActivity {
         hideSoftKeyboard(mContext);
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-
 
 
         new Handler().post(new Runnable() {
@@ -94,6 +90,8 @@ public class BirthdayActivity extends AppCompatActivity {
 
         txt_birthday = findViewById(R.id.txt_birthday);
         txt_birthday_name = findViewById(R.id.txt_birthday_name);
+        txt_birthday_name.setVisibility(View.VISIBLE);
+        txt_birthday_name.setText(name);
         txt_birthday.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
@@ -119,8 +117,7 @@ public class BirthdayActivity extends AppCompatActivity {
             @Override
             public void onAdFailedToLoad(int errorCode) {
 
-                txt_birthday_name.setVisibility(View.VISIBLE);
-                txt_birthday_name.setText(name);
+
                 Intent intent = new Intent(getApplicationContext(), BackgroundSoundService.class);
                 startService(intent);
                 RunAnimation();
@@ -181,7 +178,6 @@ public class BirthdayActivity extends AppCompatActivity {
         dialog.setCancelable(false);
         dialog.show();
 
-        Toast.makeText(mContext, "Make sure input HesdPhone !!!!....", Toast.LENGTH_SHORT).show();
 
         btn_continue.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -50,7 +50,6 @@
 
                 <EditText
                     android:id="@+id/edt_name"
-                    style="@style/font_roboto_medium"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_35sdp"
                     android:layout_marginTop="2dp"
