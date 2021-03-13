@@ -26,7 +26,7 @@ public class BackgroundSoundService extends Service {
         player = new MediaPlayer();
         player.setLooping(true); // Set looping
         try {
-            AssetFileDescriptor afd = getAssets().openFd("audio1.mp3");
+            AssetFileDescriptor afd = getAssets().openFd("audio.mpeg");
             player.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
             player.prepare();
 //            player.start();

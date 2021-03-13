@@ -6,9 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.os.Handler;
-import android.os.Message;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Gravity;
@@ -23,7 +21,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,6 +41,8 @@ public class BirthdayActivity extends AppCompatActivity {
     boolean isYes = true;
     Dialog dialog = null;
     private String name;
+    private ImageView imageView;
+
 
 
     /*ads declaration*/
@@ -73,6 +72,10 @@ public class BirthdayActivity extends AppCompatActivity {
 
             }
         });
+
+
+        imageView = findViewById(R.id.imageView);
+
 
         // TODO: 20/12/19
         //todo Initialize the Mobile Ads SDK.
@@ -104,7 +107,6 @@ public class BirthdayActivity extends AppCompatActivity {
 
         // Create the InterstitialAd and set the adUnitId.
         interstitialAd = new InterstitialAd(this);
-        // Defined in res/values/strings.xml
         interstitialAd.setAdUnitId(AD_UNIT_ID);
 
 
@@ -195,7 +197,6 @@ public class BirthdayActivity extends AppCompatActivity {
                     name = edt_name.getText().toString();
                     showInterstitial();
 
-
                     dialog.dismiss();
                 }
                 getWindow().setSoftInputMode(
@@ -209,6 +210,7 @@ public class BirthdayActivity extends AppCompatActivity {
         a.reset();
         txt_birthday_name.clearAnimation();
         txt_birthday_name.startAnimation(a);
+        imageView.setAnimation(a);
     }
 
     public void hideSoftKeyboard(Context mContext) {
@@ -222,3 +224,4 @@ public class BirthdayActivity extends AppCompatActivity {
 
 
 }
+
